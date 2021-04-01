@@ -1,8 +1,13 @@
+
+@font-face{
+font-family: "Osward";
+  src: url("Oswald-VariableFont_wght.ttf");
+}
 .container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-template-rows: repeat(2,500px);
-    grid-gap: 10px ;  
+    
 }
 .item{
      display: block;
@@ -13,14 +18,25 @@
 .itemcontainer{position: relative;
        
 }
+.texto{
+    display: flex;
+
+    align-items: flex-end;
+    position: absolute;
+    top: 0px;
+    z-index:-1;
+    bottom: 80px;
+}
+
 
 .descripcion{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Osward";
     font-size: 70px;
     position: absolute;
     top:0;
     left:0;
     z-index:-1;
+    
    
 }
 h1{ 
