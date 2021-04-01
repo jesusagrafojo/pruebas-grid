@@ -1,11 +1,19 @@
-
+@media only screen and(min-width:768px)and(max-width:940px){
+    .container{max-width: ;}
+}
+@media only screen and(min-width:400px)and(max-width:767px){}
 @font-face{
 font-family: "Osward";
   src: url("Oswald-VariableFont_wght.ttf");
 }
+:root{
+    --variable-color:rgb(243, 235, 235);
+    --variable-color2:rgb(87, 85, 85);
+}
+
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,500px);
     
 }
@@ -36,13 +44,12 @@ font-family: "Osward";
     top:0;
     left:0;
     z-index:-1;
-    
-   
-}
-h1{ 
+    text-align:center;
     height: 100%;
     object-fit: cover;
-}
+    
+   
+} 
  img{
     width: 100%;
     height: 100%;
@@ -55,6 +62,64 @@ a {display: block;
 a:hover{
 
     opacity: 80%;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-image:url(menu5.jpg);
+    color:var(--variable-color);
+}
+    .logotipo{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: 20px;
+    }
+.somos{ display: block;
+    font-size: 2em;
+    height: 100%;
+    width: 100%;}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
    
+}
+
+.titulo{   font-size: 30px;
+    position:absolute;
+    top: 90px;;
+    left: 40px;
+    color: black;
+    font-family:cursive;}
+.informacion{position:relative;
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+.empresa{position: relative;
+    text-align: center;}
+    .boton{
+        text-decoration: none;
+        width: 100%;
+        height: 10px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        top: 10px;
+        color: var(--variable-color);
+        background-color:var(--variable-color2);
+        border-radius: 6px;
+        border: 4px var(--variable-color);}
+.botton{
     
+
+    
+   
 }
