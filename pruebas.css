@@ -1,5 +1,7 @@
 @media only screen and(min-width:768px)and(max-width:940px){
-    .container{max-width: ;}
+    .container{ display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,250px); ;}
 }
 @media only screen and(min-width:400px)and(max-width:767px){}
 @font-face{
@@ -8,6 +10,7 @@ font-family: "Osward";
 }
 :root{
     --variable-color:rgb(243, 235, 235);
+   
     --variable-color2:rgb(87, 85, 85);
 }
 
@@ -118,8 +121,61 @@ a:hover{
         border-radius: 6px;
         border: 4px var(--variable-color);}
 .botton{
-    
-
-    
    
 }
+.contenedor2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-image:url(menu3.jpg);
+    color:var(--variable-color);
+}
+.trabajo{
+    grid-column-start: span 4;
+    grid-row-start: span 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+.textotrabajo{
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+   top: 50px;
+}
+.muestra{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 20px;
+}
+.nuestrotrabajo {
+    grid-column-start: span 5;
+    grid-row-start: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+.contenedor3{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    background-image:url(menu4.jpg);
+    color:var(--variable-color);
+}
+.relativo{grid-column-start: span 3;
+    grid-row-start: span 4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;        
+}
+.formulario{ font-size: 17px;
+    
+  
+
+   } 
+}
+
