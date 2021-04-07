@@ -127,18 +127,20 @@ a:hover{
     color:var(--variable-color);
 }
 .trabajo{
-    grid-column-start: span 4;
-    grid-row-start: span 2;
+    grid-row-start: 2;
     display: flex;
+    bottom: 100%;
+    /* margin: 10%; */
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;}
 .textotrabajo{
+   
     font-size: 17px;
     text-align: center;
-    position: relative;
-   top: 50px;
+    position: absolute;
+  
 }
 .muestra{
     height: 100%;
@@ -180,8 +182,8 @@ a:hover{
    ::placeholder{position: absolute;
 } 
 .recuadro{ position: relative;
-            height: 400%;
-            width: 300%;
+            height: 100%;
+            width: 90%;
             border-radius: 20px;
             border-color: khaki;
             margin: 15px;
@@ -190,34 +192,26 @@ a:hover{
            
 }
 .contenedor4{  display: grid;
-    position: absolute;
+   
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(30,1fr);
+    grid-template-rows: repeat(3,1fr);
     background-image:url(menu4.jpg);
     color:var(--variable-color);
-    height: 150%;
-    
-    align-items:flex-end;
+   
 }
     .imagen{height: 100%;
         width: 100%;
         object-fit: cover;
         margin: 20px;
     }
-.galeria{position:relative;
-    display: grid;
+.galeria{position:absolute;
     grid-row-start: span 3;
     width: 90%;
-    height: 70%;
-    align-items: center;
+    height: 100%;
    /* justify-items:flex-end; */
-   
-    grid-gap: 10px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(15,1fr);
-    
+   align-items: flex-end;
+     grid-gap: 10px; 
     color:var(--variable-color);}
-
   .enunciado{
       padding: 10px;
     color:var(--variable-color);
