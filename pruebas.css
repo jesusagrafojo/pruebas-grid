@@ -1,28 +1,9 @@
-@media only screen and(min-width:768px)and(max-width:940px){
-    .container{ display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,250px); ;}
-}
-@media only screen and(min-width:400px)and(max-width:767px){}
-@font-face{
-font-family: "Osward";
-  src: url("Oswald-VariableFont_wght.ttf");
-}
-*{margin: 0px;
-    padding: 0px;        
-}
-:root{
-    --variable-color:rgb(243, 235, 235);
-   
-    --variable-color2:rgb(87, 85, 85);
-    --variable-tipoletra:font-family: "Osward";
-    
-}
+
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,500px);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,360px);
     
 }
 .item{
@@ -36,7 +17,7 @@ font-family: "Osward";
 }
 .texto{
     display: flex;
-
+    font-size: 20px;
     align-items: flex-end;
     position: absolute;
     top: 0px;
@@ -47,7 +28,7 @@ font-family: "Osward";
 
 .descripcion{
     font-family: "Osward";
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     top:0;
     left:0;
@@ -74,15 +55,15 @@ a:hover{
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
     background-image:url(menu5.jpg);
     color:var(--variable-color);
 }
     .logotipo{
        position: relative;
         height: 100%;
-        width: 100%;
+        width: 90%;
         object-fit: cover;
         margin: 20px;
     }
@@ -92,27 +73,29 @@ a:hover{
     width: 100%;}
 .logo{
     position: relative;
-   display: flex;
+     display: flex;
+     align-items: flex-start;
     width: 100%;
     height: 100%;
     text-align: justify;
+   
    
 }
 
 .titulo{   font-size: 30px;
     position:absolute;
-    display:;
+    word-wrap:break-word;
     top: 90px;;
     left: 40px;
     color: black;
     font-family:cursive;}
 .informacion{position:relative;
-    grid-column-start: span 3;
-    grid-row-start: span 3;
-    display: flex;
+    grid-column-start: span 1;
+    grid-row-start: span 4;
+    display: flex; 
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;}
 .empresa{position: relative;
     text-align: center;}
@@ -123,18 +106,23 @@ a:hover{
         padding: 10px;
         font-weight: 600;
         font-size: 15px;
-        top: 10px;
+      
         color: var(--variable-color);
         background-color:var(--variable-color2);
         border-radius: 6px;
         border: 4px var(--variable-color);}
-.botton{
-   
-}
+        .botton{position:relative;
+           right: 140px;
+           padding: 10px;
+            
+            
+        
+        }
+
 .contenedor2{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
     background-image:url(menu3.jpg);
     color:var(--variable-color);
 }
@@ -167,8 +155,8 @@ a:hover{
     text-align: center;}
 .contenedor3{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
     background-image:url(menu4.jpg);
     color:var(--variable-color);
 }
@@ -192,19 +180,19 @@ a:hover{
    ::placeholder{position: absolute;
 } 
 .recuadro{ position: relative;
-            height: 500%;
+            height: 400%;
             width: 300%;
             border-radius: 20px;
             border-color: khaki;
             margin: 15px;
-            padding: 15px;
+            padding: 20px;
            background-color: lightblue;
            
 }
 .contenedor4{  display: grid;
     position: absolute;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(30,1fr);
     background-image:url(menu4.jpg);
     color:var(--variable-color);
     height: 150%;
@@ -216,30 +204,518 @@ a:hover{
         object-fit: cover;
         margin: 20px;
     }
-.galeria{position:absolute;
+.galeria{position:relative;
     display: grid;
     grid-row-start: span 3;
     width: 90%;
     height: 70%;
-   justify-items:flex-end;
+    align-items: center;
+   /* justify-items:flex-end; */
    
-   grid-gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,150px);
+    grid-gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(15,1fr);
     
-    color:var(--variable-color);}}
-.imagen{
-   
-  }
+    color:var(--variable-color);}
+
   .enunciado{
       padding: 10px;
     color:var(--variable-color);
     text-align: center;
     font-family:Oswald;
 
+}
+.contenedor6{display: grid;
+     grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-image:url(menu4.jpg);
+grid-gap: 20px;}
+    .gmail{width: 100%;
+    height: 100%;
+    text-align: center;
+    grid-column-start: span 1;
+    grid-row-start: 2;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    }
+
+@font-face{
+font-family: "Osward";
+  src: url("Oswald-VariableFont_wght.ttf");
+}
+*{margin: 0px;
+    padding: 0px;        
+}
+:root{
+    --variable-color:rgb(243, 235, 235);
    
+    --variable-color2:rgb(87, 85, 85);
+    --variable-tipoletra:font-family: "Osward";
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px){
+    .container{ display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,500px);}
+        .item{
+            display: block;
+           font-size: 2em;
+           height: 100%;
+           width: 100%;
+       }
+       .itemcontainer{position: relative;
+              
+       }
+       .texto{
+           display: flex;
+       
+           align-items: flex-end;
+           position: absolute;
+           top: 0px;
+           z-index:-1;
+           bottom: 80px;
+       }
+       
+       
+       .descripcion{
+           font-family: "Osward";
+           font-size: 50px;
+           position: absolute;
+           top:0;
+           left:0;
+           z-index:-1;
+           text-align:center;
+           height: 100%;
+           object-fit: cover;
+           
+          
+       } 
+        img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+       a {display: block;
+           height: 100%;
+           width: 100%;
+       }
+       a:hover{
+       
+           opacity: 80%;
+       }
+       
+       .contenedor{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: repeat(4,1fr);
+           background-image:url(menu5.jpg);
+           color:var(--variable-color);
+       }
+           .logotipo{
+              position: relative;
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               margin: 20px;
+           }
+       .somos{ display: block;
+           font-size: 2em;
+           height: 100%;
+           width: 100%;}
+       .logo{
+           position: relative;
+            display: flex;
+           width: 100%;
+           height: 100%;
+           text-align: justify;
+          
+          
+       }
+       
+       .titulo{   font-size: 30px;
+           position:absolute;
+           word-wrap:break-word;
+           top: 90px;;
+           left: 40px;
+           color: black;
+           font-family:cursive;}
+       .informacion{position:relative;
+           grid-column-start: span 3;
+           grid-row-start: span 3;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;}
+       .empresa{position: relative;
+           text-align: center;}
+           .boton{
+               text-decoration: none;
+               width: 100%;
+               height: 10px;
+               padding: 10px;
+               font-weight: 600;
+               font-size: 15px;
+               top: 10px;
+               color: var(--variable-color);
+               background-color:var(--variable-color2);
+               border-radius: 6px;
+               border: 4px var(--variable-color);}
+       
+       .contenedor2{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: repeat(6,1fr);
+           background-image:url(menu3.jpg);
+           color:var(--variable-color);
+       }
+       .trabajo{
+           grid-column-start: span 4;
+           grid-row-start: span 2;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;}
+       .textotrabajo{
+           font-size: 17px;
+           text-align: center;
+           position: relative;
+          top: 50px;
+       }
+       .muestra{
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+           margin: 20px;
+       }
+       .nuestrotrabajo {
+           grid-column-start: span 5;
+           grid-row-start: span 3;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;}
+       .contenedor3{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: repeat(4,1fr);
+           background-image:url(menu4.jpg);
+           color:var(--variable-color);
+       }
+       .relativo{grid-column-start: span 1;
+           grid-row-start: span 3;
+           display: flex;
+          
+           border-radius: 30px;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;        
+       }
+       .formulario{ font-size: 17px;
+           display: flex;
+           justify-content: flex-start;
+           text-align: center;
+           top: 50px;
+       
+          }
+          ::placeholder{position: absolute;
+       } 
+       .recuadro{ position: relative;
+                   height: 400%;
+                   width: 300%;
+                   border-radius: 20px;
+                   border-color: khaki;
+                   margin: 15px;
+                   padding: 20px;
+                  background-color: lightblue;
+                  
+       }
+       .contenedor4{  display: grid;
+           position: absolute;
+           grid-template-columns: repeat(5,1fr);
+           grid-template-rows: repeat(4,1fr);
+           background-image:url(menu4.jpg);
+           color:var(--variable-color);
+           height: 150%;
+           
+           align-items:flex-end;
+       }
+           .imagen{height: 100%;
+               width: 100%;
+               object-fit: cover;
+               margin: 20px;
+           }
+       .galeria{position:absolute;
+           display: grid;
+           grid-row-start: span 3;
+           width: 90%;
+           height: 70%;
+          justify-items:flex-end;
+          
+          grid-gap: 10px;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(5,150px);
+           
+           color:var(--variable-color);}
+       
+         .enunciado{
+             padding: 10px;
+           color:var(--variable-color);
+           text-align: center;
+           font-family:Oswald;
+       
+       }
+       .contenedor6{
+           background-image:url(menu4.jpg);}
+    
+}
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,500px);
+        
+    }
+    .item{
+         display: block;
+        font-size: 2em;
+        height: 100%;
+        width: 100%;
+    }
+    .itemcontainer{position: relative;
+           
+    }
+    .texto{
+        display: flex;
+    
+        align-items: flex-end;
+        position: absolute;
+        top: 0px;
+        z-index:-1;
+        bottom: 80px;
+    }
+    
+    
+    .descripcion{
+        font-family: "Osward";
+        font-size: 70px;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        text-align:center;
+        height: 100%;
+        object-fit: cover;
+        
+       
+    } 
+     img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    a {display: block;
+        height: 100%;
+        width: 100%;
+    }
+    a:hover{
+    
+        opacity: 80%;
+    }
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        background-image:url(menu5.jpg);
+        color:var(--variable-color);
+    }
+        .logotipo{
+           position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            margin: 20px;
+        }
+    .somos{ display: block;
+        font-size: 2em;
+        height: 100%;
+        width: 100%;}
+    .logo{
+        position: relative;
+         display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+       
+       
+    }
+    
+    .titulo{   font-size: 30px;
+        position:absolute;
+        word-wrap:break-word;
+        top: 90px;;
+        left: 40px;
+        color: black;
+        font-family:cursive;}
+    .informacion{position:relative;
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;}
+    .empresa{position: relative;
+        text-align: center;}
+        .boton{
+            text-decoration: none;
+            width: 100%;
+            height: 10px;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            top: 10px;
+            color: var(--variable-color);
+            background-color:var(--variable-color2);
+            border-radius: 6px;
+            border: 4px var(--variable-color);}
+    
+    .contenedor2{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(6,1fr);
+        background-image:url(menu3.jpg);
+        color:var(--variable-color);
+    }
+    .trabajo{
+        grid-column-start: span 4;
+        grid-row-start: span 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;}
+    .textotrabajo{
+        font-size: 17px;
+        text-align: center;
+        position: relative;
+       top: 50px;
+    }
+    .muestra{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .nuestrotrabajo {
+        grid-column-start: span 5;
+        grid-row-start: span 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+    .contenedor3{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        background-image:url(menu4.jpg);
+        color:var(--variable-color);
+    }
+    .relativo{grid-column-start: span 1;
+        grid-row-start: span 3;
+        display: flex;
+       
+        border-radius: 30px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;        
+    }
+    .formulario{ font-size: 17px;
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        top: 50px;
+    
+       }
+       ::placeholder{position: absolute;
+    } 
+    .recuadro{ position: relative;
+                height: 400%;
+                width: 300%;
+                border-radius: 20px;
+                border-color: khaki;
+                margin: 15px;
+                padding: 20px;
+               background-color: lightblue;
+               
+    }
+    .contenedor4{  display: grid;
+        position: absolute;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        background-image:url(menu4.jpg);
+        color:var(--variable-color);
+        height: 150%;
+        
+        align-items:flex-end;
+    }
+        .imagen{height: 100%;
+            width: 100%;
+            object-fit: cover;
+            margin: 20px;
+        }
+    .galeria{position:absolute;
+        display: grid;
+        grid-row-start: span 3;
+        width: 90%;
+        height: 70%;
+       justify-items:flex-end;
+       
+       grid-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,150px);
+        
+        color:var(--variable-color);}
+    
+      .enunciado{
+          padding: 10px;
+        color:var(--variable-color);
+        text-align: center;
+        font-family:Oswald;
+    
+    }
+    .contenedor6{
+        background-image:url(menu4.jpg);}
+    
+}
+
 
   
 
