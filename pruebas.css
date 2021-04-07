@@ -1,5 +1,6 @@
 
-
+/* *{min-width: 360px;} */
+@media screen and (min-width:400px){
 .container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -202,15 +203,16 @@ a:hover{
     .imagen{height: 100%;
         width: 100%;
         object-fit: cover;
-        margin: 20px;
+        
     }
 .galeria{position:absolute;
-    grid-row-start: span 3;
-    width: 90%;
-    height: 100%;
-   /* justify-items:flex-end; */
-   align-items: flex-end;
-     grid-gap: 10px; 
+    display:flex;
+    background-image:url(menu4.jpg);
+    flex-direction: column;
+    top: 800px;
+    align-items:center;
+     grid-gap: 80px; 
+     
     color:var(--variable-color);}
   .enunciado{
       padding: 10px;
@@ -223,16 +225,16 @@ a:hover{
      grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(3,1fr);
     background-image:url(menu4.jpg);
-grid-gap: 20px;}
-    .gmail{width: 100%;
+    grid-gap: 20px;}
+    .gmail{
+        width: 100%;
     height: 100%;
     text-align: center;
-    grid-column-start: span 1;
-    grid-row-start: 2;
+   
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    }
+    }}
 
 @font-face{
 font-family: "Osward";
@@ -266,8 +268,8 @@ font-family: "Osward";
 
 @media screen and (min-width:768px){
     .container{ display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,500px);}
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,500px);}
         .item{
             display: block;
            font-size: 2em;
@@ -317,8 +319,9 @@ font-family: "Osward";
        
        .contenedor{
            display: grid;
-           grid-template-columns: repeat(5,1fr);
-           grid-template-rows: repeat(4,1fr);
+           height: 100%;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(5,1fr);
            background-image:url(menu5.jpg);
            color:var(--variable-color);
        }
@@ -327,7 +330,7 @@ font-family: "Osward";
                height: 100%;
                width: 100%;
                object-fit: cover;
-               margin: 20px;
+               
            }
        .somos{ display: block;
            font-size: 2em;
@@ -343,31 +346,35 @@ font-family: "Osward";
           
        }
        
-       .titulo{   font-size: 30px;
+       .titulo{   font-size: 20px;
            position:absolute;
+           text-align: center;
            word-wrap:break-word;
-           top: 90px;;
-           left: 40px;
+           top: 65px;;
+           left: 20px;
            color: black;
            font-family:cursive;}
        .informacion{position:relative;
-           grid-column-start: span 3;
+           grid-column-start: span 5;
            grid-row-start: span 3;
            display: flex;
            justify-content: center;
            flex-direction: column;
-           align-items: center;
+           align-items:center;
            text-align: center;}
        .empresa{position: relative;
-           text-align: center;}
+           text-align: center;
+
+        }
+           
            .boton{
                text-decoration: none;
                width: 100%;
-               height: 10px;
-               padding: 10px;
-               font-weight: 600;
                font-size: 15px;
-               top: 10px;
+               top: 20px;
+               padding: 100px;
+               margin: 50px;
+               right: 100px;
                color: var(--variable-color);
                background-color:var(--variable-color2);
                border-radius: 6px;
@@ -377,12 +384,13 @@ font-family: "Osward";
            display: grid;
            grid-template-columns: repeat(5,1fr);
            grid-template-rows: repeat(6,1fr);
+           height: 100%;
            background-image:url(menu3.jpg);
            color:var(--variable-color);
        }
        .trabajo{
            grid-column-start: span 4;
-           grid-row-start: span 2;
+           grid-row-start: span 3;
            display: flex;
            justify-content: center;
            flex-direction: column;
@@ -410,12 +418,13 @@ font-family: "Osward";
        .contenedor3{
            display: grid;
            grid-template-columns: repeat(5,1fr);
-           grid-template-rows: repeat(4,1fr);
+           grid-template-rows: repeat(7,1fr);
            background-image:url(menu4.jpg);
            color:var(--variable-color);
+           height: 100%;
        }
        .relativo{grid-column-start: span 1;
-           grid-row-start: span 3;
+           grid-row-start: span 4;
            display: flex;
           
            border-radius: 30px;
@@ -434,7 +443,7 @@ font-family: "Osward";
           ::placeholder{position: absolute;
        } 
        .recuadro{ position: relative;
-                   height: 400%;
+                   height: 200%;
                    width: 300%;
                    border-radius: 20px;
                    border-color: khaki;
@@ -444,43 +453,54 @@ font-family: "Osward";
                   
        }
        .contenedor4{  display: grid;
-           position: absolute;
-           grid-template-columns: repeat(5,1fr);
-           grid-template-rows: repeat(4,1fr);
+           
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(6,1fr);
            background-image:url(menu4.jpg);
            color:var(--variable-color);
-           height: 150%;
+          
            
            align-items:flex-end;
        }
            .imagen{height: 100%;
                width: 100%;
                object-fit: cover;
-               margin: 20px;
+              
            }
        .galeria{position:absolute;
            display: grid;
-           grid-row-start: span 3;
-           width: 90%;
-           height: 70%;
-          justify-items:flex-end;
+           top: 400px;
+           width: 100%;
+           height: 100%;
+          justify-items:center;
+          background-image:url(menu4.jpg);
           
-          grid-gap: 10px;
-           grid-template-columns: repeat(4,1fr);
-           grid-template-rows: repeat(5,150px);
-           
            color:var(--variable-color);}
        
          .enunciado{
-             padding: 10px;
+            
            color:var(--variable-color);
-           text-align: center;
+           text-align:start;
            font-family:Oswald;
        
        }
-       .contenedor6{
-           background-image:url(menu4.jpg);}
-    
+       .contenedor6{display: grid;
+        grid-template-columns: repeat(3,1fr);
+       grid-template-rows: repeat(6,1fr);
+       background-image:url(menu4.jpg);
+       height: 100%;
+       grid-gap: 20px;}
+       .gmail{
+           width: 100%;
+       height: 100%;
+       text-align: center;
+      grid-row-start: 3;
+      padding: 100px;
+      grid-column-start: span 2;
+       flex-direction: column;
+       align-items:center;
+       justify-content: center;
+       }
 }
 
 
@@ -705,8 +725,23 @@ font-family: "Osward";
         font-family:Oswald;
     
     }
-    .contenedor6{
-        background-image:url(menu4.jpg);}
+    .contenedor6{display: grid;
+        grid-template-columns: repeat(6,1fr);
+       grid-template-rows: repeat(6,1fr);
+       background-image:url(menu4.jpg);
+       height: 100%;
+       grid-gap: 20px;}
+       .gmail{
+           width: 100%;
+       height: 100%;
+       text-align: center;
+      grid-row-start: 3;
+      padding: 100px;
+      grid-column-start: span 2;
+       flex-direction: column;
+       align-items:center;
+       justify-content: center;
+       }
     
 }
 
